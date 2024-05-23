@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/admin-panel.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
         integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
@@ -64,32 +64,18 @@
     <div class="content-main">
         <div class="row">
             <div class="soz">
-                <h1 class="title">Discover seamless parking with ParkSmart. Where would you like to go and park today?
-                </h1>
-                <p class="subtitle">Ensure your convenience with ParkSmart - a large number of parking spaces at your
-                    disposal. Find and reserve your ideal parking spot. Just enter your destination below and start your
-                    hassle-free parking experience now!
-                </p>
+                <h1 class="title">Mega Silk Way</h1>
+                <p class="subtitle">Welcome! You can now easily add or delete parking zones here. Manage your parking
+                    spaces with just a few clicks to ensure seamless operations.</p>
             </div>
             <div class="wrapper">
                 <div class="search_box">
-                    <div class="location_dropdown"> <!-- Changed class name to location_dropdown -->
-                        <div class="default_option">Astana</div>
-                        <ul>
-                            <li>Astana</li>
-                            <li>Almaty</li>
-                            <li>Shymkent</li>
-                        </ul>
-                    </div>
-                    <!-- Calendar dropdown -->
-
                     <div class="search_field">
-                        <input type="text" class="input" placeholder="Search">
-                        <i class="fas fa-search"></i>
+                        <p style="font-size: 20px; margin-top: 10px;">Kabanbay Batyr ave. 62</p>
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
     </div>
@@ -97,7 +83,9 @@
 
 
     <section id="Result" class="section_result">
-        <h2 class="result_main">Results:</h2>
+        <div class="right_buttons">
+            <button type="button" class="btn btn-add-section">Add Section</button>
+        </div>
         <div class="rectangle-container">
             <div class="rectangle">
                 <div class="row">
@@ -105,10 +93,10 @@
                         <img class="slot_logo" src="img/mega_logo.png" alt="">
                     </div>
                     <div class="text-container">
-                        <h2 class="spot">“Mega Silk Way” shopping center</h2>
+                        <h2 class="spot">Zone 1</h2>
                         <p class="address">Address: Kabanbay Batyr ave. 62</p>
-                        <p class="spot">Free spots: 67</p>
-                        <p class="price">Price: from 500₸</p>
+                        <p class="spot">Total spots: 120</p>
+                        <p class="price">Price: 500₸</p>
                     </div>
                 </div>
             </div>
@@ -118,27 +106,19 @@
                         <img class="slot_logo" src="img/mega_logo.png" alt="">
                     </div>
                     <div class="text-container">
-                        <h2 class="spot">“Mega Silk Way” shopping center</h2>
+                        <h2 class="spot">Zone 2</h2>
                         <p class="address">Address: Kabanbay Batyr ave. 62</p>
-                        <p class="spot">Free spots: 67</p>
-                        <p class="price">Price: from 500₸</p>
+                        <p class="spot">Total spots: 120</p>
+                        <p class="price">Price: 500₸</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
 
 
-   
 
 
-    <section id="works">
-        <div class="container">
-            <h1 class="works_text">How everything works ?</h1>
-
-        </div>
-    </section>
 
 
     <section id="last">
@@ -198,39 +178,39 @@
     <!-- Include Bootstrap Datepicker JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
     </script>
-<script>
-    $(document).ready(function () {
-        // Initialize datepicker
-        $('#datepicker').datepicker({
-            format: 'yyyy-mm-dd', // Date format
-            autoclose: true // Close the datepicker when a date is selected
+    <script>
+        $(document).ready(function () {
+            // Initialize datepicker
+            $('#datepicker').datepicker({
+                format: 'yyyy-mm-dd', // Date format
+                autoclose: true // Close the datepicker when a date is selected
+            });
+
+            // Handle location dropdown clicks
+            $(".location_dropdown .default_option").click(function (e) {
+                e.stopPropagation(); // Prevent event propagation to prevent interference
+                $(".location_dropdown ul").addClass("active");
+            });
+
+            // Handle location dropdown option clicks
+            $(".location_dropdown ul li").click(function (e) {
+                e.stopPropagation(); // Prevent event propagation to prevent interference
+                var text = $(this).text();
+                $(".location_dropdown .default_option").text(text);
+                $(".location_dropdown ul").removeClass("active");
+            });
+
+            // Close location dropdown when clicking outside
+            $(document).click(function () {
+                $(".location_dropdown ul").removeClass("active");
+            });
         });
-
-        // Handle location dropdown clicks
-        $(".location_dropdown .default_option").click(function (e) {
-            e.stopPropagation(); // Prevent event propagation to prevent interference
-            $(".location_dropdown ul").addClass("active");
-        });
-
-        // Handle location dropdown option clicks
-        $(".location_dropdown ul li").click(function (e) {
-            e.stopPropagation(); // Prevent event propagation to prevent interference
-            var text = $(this).text();
-            $(".location_dropdown .default_option").text(text);
-            $(".location_dropdown ul").removeClass("active");
-        });
-
-        // Close location dropdown when clicking outside
-        $(document).click(function () {
-            $(".location_dropdown ul").removeClass("active");
-        });
-    });
-</script>
+    </script>
 
 
 
 
-    
+
 
 
 
