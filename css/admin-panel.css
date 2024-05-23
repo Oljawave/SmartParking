@@ -122,6 +122,16 @@
     BACKGROUND-COLOR: #3f94b9;
     color: white;
   }
+
+  .btn.btn-add-section {
+    BACKGROUND-COLOR: #132c37;
+    color: white;
+    margin-left: 1200px;
+  }
+
+  
+
+  
   
   .nav-link a {
     color: white;
@@ -184,7 +194,7 @@
   }
   
   .wrapper .search_box{
-    width: 1000px;
+    width: 300px;
     background: #fff;
     border-radius: 20px;
     height: 65px;
@@ -879,7 +889,8 @@
     }
   }
   
-  @media (max-width: 962px) {}
+  
+  
   
   
   

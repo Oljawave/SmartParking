@@ -21,6 +21,17 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+#dropdown {
+  width: 410px;
+}
+
+#go-back-button {
+  margin-top: 20px;
+}
+
+#login-button{
+  margin-top: 20px;
+}
 .welcome {
   font-family: 'Roboto','Montserrat', sans-serif;
   color: white;

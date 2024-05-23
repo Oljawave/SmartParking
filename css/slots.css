@@ -115,7 +115,6 @@ body::-webkit-scrollbar-track {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 120px;
 }
 
 .btn.btn-log {
@@ -126,6 +125,11 @@ body::-webkit-scrollbar-track {
     BACKGROUND-COLOR: #276179;
     color: white;
 }
+
+.btn.btn-logout {
+    BACKGROUND-COLOR: #3f94b9;
+    color: white;
+  }
 
 .nav-link a {
     color: white;
