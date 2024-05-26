@@ -1,0 +1,401 @@
+.html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.right_title.right_subtitle {
+    color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+
+    background: url(../img/search.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    margin: 0;
+  
+
+}
+
+.page {
+    position: relative;
+    background: #fff;
+    height: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0d1420;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: #a7a7c4;
+}
+
+/*header*/
+
+.header {
+    background: url(../img/headerimg.jpg);
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    height: 80px;
+}
+
+.scrolled {
+    height: 60px;
+    background: #142850;
+    transition: .3s ease-in-out;
+}
+
+.container-menu {
+    display: none;
+}
+
+.navbar-toggler {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+    position: relative;
+    transition: color;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-toggler:hover {
+    color: #1f1f1f;
+    background: #fff;
+}
+
+.navbar-toggler:active {
+    opacity: 0.8;
+    position: fixed;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.nav {
+    width: 40%;
+}
+
+.nav-list {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn.btn-log {
+    background-color: WHITE;
+}
+
+.btn.btn-register {
+    BACKGROUND-COLOR: #276179;
+    color: white;
+}
+
+.btn.btn-logout {
+    BACKGROUND-COLOR: #3f94b9;
+    color: white;
+  }
+
+.nav-link a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+
+.nav-link a:hover {
+
+    transition: 0.3s;
+    color: #1f1f1f;
+    background: #fff;
+}
+
+.content-main {
+    background: url(../img/search.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    top: -80px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    justify-content: center; /* Center content vertically */
+    position: inherit;
+    margin-top: -80px;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    margin: 0; /* Adjust margin */
+}
+
+.subtitle {
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    margin: 30px; /* Adjust margin */
+}
+
+.subtitle2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    margin: 10px; /* Adjust margin */
+}
+
+.centered-text {
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.next-text {
+    color: white;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #9fa3b1;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #9fa3b1;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #9fa3b1;
+}
+
+.header-page__link:hover {
+    color: #1f1f1f;
+    background: #fff;
+}
+
+.header-page__link:active {
+    opacity: 0.8;
+}
+
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #1f1f1f;
+    background: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-link:active {
+    opacity: 0.8;
+}
+
+.navbar-nav {
+    position: absolute;
+    background-color: #0d1420;
+}
+
+/*header*/
+
+
+p.email {
+    color: white;
+    font-size: 20px;
+}
+img.profile_image {
+    width: 240px;
+}
+h1.name {
+    color: white;
+    margin-bottom: 30px;
+}
+
+p.phone {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.head-text {
+    color: white;
+    margin-left: 70px;
+}
+
+.content-main {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+#main-content{
+    height: 500px;
+}
+
+.left-side {
+    margin-right: 150px; 
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+.name, .phone, .email {
+    margin: 0;
+    line-height: 1.5;
+}
+
+#recent {
+    background-color: #276179;
+}
+
+
+
+
+
+
+
+
+
+.row {
+    justify-content: center;
+    padding-top: 40px;
+    margin: 0px 0px;
+    margin-top: -40px;
+}
+
+
+/*footer*/
+
+.footer-section {
+    background: #0d1420;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo_img {
+    margin-bottom: 40px;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 9px;
+}
+
+.phone {
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer_links {
+    list-style-type: none;
+
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
+}
+
+.footer {
+    background: white;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
